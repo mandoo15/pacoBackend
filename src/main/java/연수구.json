@@ -1,0 +1,92 @@
+[
+    {
+        "addr": "인천광역시 연수구 연수동 532-2",
+        "parkingHour": "없음",
+        "stationName": "연수3동 공영주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 167,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 연수동 587",
+        "parkingHour": "없음",
+        "stationName": "연수역북부공영주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 94,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 연수동 591-2",
+        "parkingHour": "없음",
+        "stationName": "연수 벚꽃로 공영주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 117,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 청학동 466",
+        "parkingHour": "없음",
+        "stationName": "연수역남부공영주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 170,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 선학동 365-1",
+        "parkingHour": "없음",
+        "stationName": "선학동공영주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 34,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 동춘동 1115-7",
+        "parkingHour": "없음",
+        "stationName": "능허리주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 22,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 동춘동 산 32-1,2",
+        "parkingHour": "없음",
+        "stationName": "동춘교하부공간주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 17,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 옥련동 567-28",
+        "parkingHour": "없음",
+        "stationName": "흥륜사 주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 40,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 청학동 170",
+        "parkingHour": "없음",
+        "stationName": "청학공영주차장",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 50,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 연수구 옥련동 340-9",
+        "parkingHour": "없음",
+        "stationName": "옥련동공영주차장(1)",
+        "parkingPay": "없음",
+        "payInfo": "없음",
+        "parkingSpaces": 20,
+        "info_level": "1"
+    }
+]

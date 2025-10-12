@@ -1,0 +1,92 @@
+[
+    {
+        "addr": "인천광역시 중구 송학동1가 1-2",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "무료",
+        "parkingSpaces": 35,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 송학동1가 3",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "무료",
+        "parkingSpaces": 32,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 중앙동2가 18",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "유료",
+        "parkingSpaces": 16,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 항동2가 1-1",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "유료",
+        "parkingSpaces": 109,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 송학동3가 3-1",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "무료",
+        "parkingSpaces": 32,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 관동3가 5-3",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "유료",
+        "parkingSpaces": 7,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 해안동4가 1-1",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "유료",
+        "parkingSpaces": 71,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 관동2가 3-1",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "유료",
+        "parkingSpaces": 27,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 신포동 14-3",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "유료",
+        "parkingSpaces": 14,
+        "info_level": "1"
+    },
+    {
+        "addr": "인천광역시 중구 신포동 17-2",
+        "parkingHour": "없음",
+        "stationName": "없음",
+        "parkingPay": "없음",
+        "payInfo": "유료",
+        "parkingSpaces": 21,
+        "info_level": "1"
+    }
+]
