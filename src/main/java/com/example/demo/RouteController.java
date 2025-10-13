@@ -4,7 +4,7 @@ import com.example.demo.dto.RouteResult;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000") // 필요 시 CORS 수정
+@CrossOrigin(origins = "https://hsu-paco-fe-r0uw.onrender.com") // 필요 시 CORS 수정
 @RequestMapping("/route")
 public class RouteController {
 

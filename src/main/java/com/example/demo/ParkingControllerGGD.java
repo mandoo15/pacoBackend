@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://hsu-paco-fe-r0uw.onrender.com")
 @RestController
 public class ParkingControllerGGD {
 
