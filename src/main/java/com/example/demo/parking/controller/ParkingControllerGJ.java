@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.config.EnvConfig;
 import com.example.demo.dto.GJ.ParkingInfoDTOGJ;
 import com.example.demo.dto.GJ.ParkingResponseWrapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -23,7 +24,7 @@ public class ParkingControllerGJ {
     public List<ParkingInfoDTOGJ> callApi() {
         try {
             String apiUrl = "https://apis.data.go.kr/5050000/GYJOpenApi/ParkingOperInfoPage?"
-                    + "serviceKey=2g4UkG4HCnw63pTfOXD%2FLX%2Fy3BRi%2BzsW3B57RCDkJ2q5sDYi6rSb8OFqZYnJ9nGTpzVy4fyCRIFF79zqQBEhuA%3D%3D"
+                    + "serviceKey="  + EnvConfig.get("Servicekey_gyeonggju")
                     + "&pageNo=1&numOfRows=10";
 
             URL url = new URL(apiUrl);

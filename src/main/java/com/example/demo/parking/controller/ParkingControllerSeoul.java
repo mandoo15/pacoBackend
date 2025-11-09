@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.config.EnvConfig;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,7 +33,7 @@ public class ParkingControllerSeoul {
     }
 
     public List<Map<String, Object>> getInfoLevel3() {
-        String apiKey = "734447717374733336397552615952";
+        String apiKey = EnvConfig.get("Servicekey_seoul3");
         String url = "http://openapi.seoul.go.kr:8088/" + apiKey + "/json/GetParkingInfo/1/355";
 
         RestTemplate restTemplate = new RestTemplate();
@@ -86,7 +87,7 @@ public class ParkingControllerSeoul {
     }
 
     public List<Map<String, Object>> getInfoLevel1() {
-        String apiKey = "684464724674733338316b785a7542";
+        String apiKey = EnvConfig.get("Servicekey_seoul1");
         String url = "http://openapi.seoul.go.kr:8088/" + apiKey + "/json/GetParkInfo/1/1000";
 
         RestTemplate restTemplate = new RestTemplate();

@@ -3,6 +3,7 @@ package com.example.demo.dto.GGD;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ParkingInfoDTOGGD { // 경기도 실시간 정보
 

@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.config.EnvConfig;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +16,7 @@ import java.util.*;
 
 @RestController
 public class ParkingControllerGwangju {
-    private final String serviceKey = "Zj9tS0W%2FaXAXTx5%2FBQuYs0FRF2395bxm6MLqgfHtu%2FX12eqjOllWMF6c0GWCJHo%2BRUBexRIvgLI5Ri55sDtwVg%3D%3D";
+    private final String serviceKey = EnvConfig.get("Servicekey_gwangju");
 
     @GetMapping("/parking_info/gwangju")
     public ResponseEntity<?> getFormattedData() {

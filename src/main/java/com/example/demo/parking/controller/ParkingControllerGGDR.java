@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.config.EnvConfig;
 import com.example.demo.dto.GGD.ParkingInfoDTOGGDR;
 import com.example.demo.dto.GGD.ParkingRealtimeWrapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -32,7 +33,7 @@ public class ParkingControllerGGDR {
 
             for (String regionId : regionIds) {
                 String url = "https://openapigits.gg.go.kr/api/rest/getParkingPlaceAvailabilityInfoList" +
-                        "?serviceKey=e0ba55f1a97c694e87ca3a18d1cafb18db69aca" +
+                        "?serviceKey=" + EnvConfig.get("Servicekey_gyeonggido") +
                         "&laeId=" + regionId;
 
                 HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();

@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.config.EnvConfig;
 import com.example.demo.dto.GJ.ParkingInfoDTOGJR;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -26,7 +27,7 @@ public class ParkingControllerGJR {
 
         try {
             String apiUrl = "https://apis.data.go.kr/5050000/GYJOpenApi//ParkingRemainZoneInfoPage?"
-                    + "serviceKey=2g4UkG4HCnw63pTfOXD%2FLX%2Fy3BRi%2BzsW3B57RCDkJ2q5sDYi6rSb8OFqZYnJ9nGTpzVy4fyCRIFF79zqQBEhuA%3D%3D"
+                    + "serviceKey=" + EnvConfig.get("Servicekey_gyeongju")
                     + "&";
 
             URL url = new URL(apiUrl);

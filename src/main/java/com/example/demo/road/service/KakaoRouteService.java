@@ -1,12 +1,13 @@
 package com.example.demo.service;
 
+import com.example.demo.config.EnvConfig;
 import org.springframework.stereotype.Service;
 import java.net.http.*;
 import java.net.URI;
 
 @Service
 public class KakaoRouteService {
-    private final String API_KEY = "ab97822b7cc1cea1c35ecabad29b6c2c";
+    private final String API_KEY = EnvConfig.get("api_key_kakaoroute");
 
     public String getRoute(double originX, double originY, double destX, double destY) {
         try {

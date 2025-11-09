@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.config.EnvConfig;
 import com.example.demo.dto.GGD.ParkingServiceResultWrapper;
 import com.example.demo.dto.GGD.ParkingMessageBody;
 import com.example.demo.dto.GGD.ParkingInfoDTOGGD;
@@ -34,7 +35,7 @@ public class ParkingControllerGGD {
             XmlMapper xmlMapper = new XmlMapper(); // generate xmlMapper object that mapping to xml data
 
             for (String regionId : regionIds) { // until the end of regionIds
-                String apiUrl = "https://openapigits.gg.go.kr/api/rest/getParkingPlaceInfoList?serviceKey=e0ba55f1a97c694e87ca3a18d1cafb18db69aca"
+                String apiUrl = "https://openapigits.gg.go.kr/api/rest/getParkingPlaceInfoList?serviceKey=" +  EnvConfig.get("Servicekey_gyeonggido")
                         + "&laeId=" + regionId;
 
                 HttpURLConnection conn = (HttpURLConnection) new URL(apiUrl).openConnection(); // create http connection for requesting API

@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.config.EnvConfig;
 import org.json.JSONObject;
 import org.json.XML;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,7 @@ import java.util.Map;
 
 @RestController
 public class ParkingControllerDaejeon {
-    private final String serviceKey = "Zj9tS0W%2FaXAXTx5%2FBQuYs0FRF2395bxm6MLqgfHtu%2FX12eqjOllWMF6c0GWCJHo%2BRUBexRIvgLI5Ri55sDtwVg%3D%3D";
+    private final String serviceKey = EnvConfig.get("Servicekey_daejeon");
 
     @GetMapping("/parking_info/daejeon")
     public ResponseEntity<?> getRawParkingDataAsJson() {
