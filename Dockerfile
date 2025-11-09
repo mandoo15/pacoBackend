@@ -1,5 +1,5 @@
 # 1️⃣ Maven 빌드용 이미지 (builder)
-FROM eclipse-temurin:17-jdk AS builder
+FROM eclipse-temurin:21-jdk AS builder
 
 # 작업 디렉토리
 WORKDIR /app
