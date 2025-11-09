@@ -1,10 +1,10 @@
-package com.example.demo.controller;
+package com.example.demo.user.controller;
 
-import com.example.demo.dto.LoginRequest;
-import com.example.demo.dto.RegisterRequest;
-import com.example.demo.model.User;
-import com.example.demo.repository.UserRepository;
-import com.example.demo.util.JwtUtil;
+import com.example.demo.user.dto.LoginRequest;
+import com.example.demo.user.dto.RegisterRequest;
+import com.example.demo.user.model.User;
+import com.example.demo.user.repository.UserRepository;
+import com.example.demo.user.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;

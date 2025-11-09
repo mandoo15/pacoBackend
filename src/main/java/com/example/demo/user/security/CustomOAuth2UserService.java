@@ -1,4 +1,4 @@
-package com.example.demo.security;
+package com.example.demo.user.security;
 
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
@@ -21,52 +21,39 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         String registrationId = userRequest.getClientRegistration().getRegistrationId();
         Map<String, Object> attributes = oAuth2User.getAttributes();
 
-        Map<String, Object> userAttributes = new HashMap<>();
-        String userNameAttributeName = userRequest.getClientRegistration()
-                .getProviderDetails().getUserInfoEndpoint().getUserNameAttributeName();
+        Map<String, Object> userInfo = new HashMap<>();
+
+        if ("kakao".equals(registrationId)) {
+            Map<String, Object> kakaoAccount = (Map<String, Object>) attributes.get("kakao_account");
+            if (kakaoAccount != null) {
+                Map<String, Object> profile = (Map<String, Object>) kakaoAccount.get("profile");
+                userInfo.put("id", attributes.get("id"));
+                userInfo.put("email", kakaoAccount.getOrDefault("email", "kakao_user@paco.com"));
+                userInfo.put("nickname", profile != null ? profile.get("nickname") : "카카오사용자");
+                userInfo.put("profile_image", profile != null ? profile.get("profile_image_url") : null);
+            }
+        }
 
         if ("naver".equals(registrationId)) {
             Map<String, Object> response = (Map<String, Object>) attributes.get("response");
-            userAttributes.put("id", response.get("id"));
-            userAttributes.put("name", response.get("name"));
-            userAttributes.put("email", response.get("email"));
-            userAttributes.put("picture", response.get("profile_image"));
-            return new DefaultOAuth2User(
-                    Collections.singleton(new SimpleGrantedAuthority("ROLE_USER")),
-                    userAttributes,
-                    "id");
+            userInfo.put("id", response.get("id"));
+            userInfo.put("email", response.get("email"));
+            userInfo.put("nickname", response.get("name"));
+            userInfo.put("profile_image", response.get("profile_image"));
         }
 
-        if ("kakao".equals(registrationId)) {
-            Object kakaoAccountObj = attributes.get("kakao_account");
-
-            if (kakaoAccountObj instanceof Map) {
-                Map<String, Object> kakaoAccount = (Map<String, Object>) kakaoAccountObj;
-                Object profileObj = kakaoAccount.get("profile");
-
-                if (profileObj instanceof Map) {
-                    Map<String, Object> profile = (Map<String, Object>) profileObj;
-
-                    String nickname = (String) profile.getOrDefault("nickname", "unknown");
-                    String profileImage = (String) profile.getOrDefault("profile_image_url", null);
-
-                    return new DefaultOAuth2User(
-                            Collections.singleton(new SimpleGrantedAuthority("ROLE_USER")),
-                            Map.of(
-                                    "id", attributes.get("id"),
-                                    "nickname", nickname,
-                                    "profile_image", profileImage),
-                            "nickname");
-                }
-            }
-
-            // fallback
-            return new DefaultOAuth2User(
-                    Collections.singleton(new SimpleGrantedAuthority("ROLE_USER")),
-                    Map.of("id", attributes.get("id"), "nickname", "unknown"),
-                    "nickname");
+        if ("google".equals(registrationId)) {
+            userInfo.put("id", oAuth2User.getAttribute("sub"));
+            userInfo.put("email", oAuth2User.getAttribute("email"));
+            userInfo.put("nickname", oAuth2User.getAttribute("name"));
+            userInfo.put("profile_image", oAuth2User.getAttribute("picture"));
         }
 
-        return oAuth2User;
+        // 통합된 구조로 반환
+        return new DefaultOAuth2User(
+                Collections.singleton(new SimpleGrantedAuthority("ROLE_USER")),
+                userInfo,
+                "email" // 주 식별자
+        );
     }
 }

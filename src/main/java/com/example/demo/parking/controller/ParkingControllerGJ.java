@@ -1,8 +1,8 @@
-package com.example.demo;
+package com.example.demo.parking.controller;
 
 import com.example.demo.config.EnvConfig;
-import com.example.demo.dto.GJ.ParkingInfoDTOGJ;
-import com.example.demo.dto.GJ.ParkingResponseWrapper;
+import com.example.demo.parking.dto.GJ.ParkingInfoDTOGJ;
+import com.example.demo.parking.dto.GJ.ParkingResponseWrapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

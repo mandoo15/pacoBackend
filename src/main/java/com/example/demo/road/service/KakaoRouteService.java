@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.road.service;
 
 import com.example.demo.config.EnvConfig;
 import org.springframework.stereotype.Service;

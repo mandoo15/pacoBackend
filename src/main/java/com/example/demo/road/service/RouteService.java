@@ -1,6 +1,8 @@
-package com.example.demo;
+package com.example.demo.road.service;
 
-import com.example.demo.dto.RouteResult;
+import com.example.demo.road.Coordinate;
+import com.example.demo.road.RoadEdge;
+import com.example.demo.parking.dto.RouteResult;
 import org.springframework.stereotype.Service;
 
 import java.util.*;

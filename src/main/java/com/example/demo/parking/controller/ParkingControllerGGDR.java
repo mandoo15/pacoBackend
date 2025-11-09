@@ -1,8 +1,8 @@
-package com.example.demo;
+package com.example.demo.parking.controller;
 
 import com.example.demo.config.EnvConfig;
-import com.example.demo.dto.GGD.ParkingInfoDTOGGDR;
-import com.example.demo.dto.GGD.ParkingRealtimeWrapper;
+import com.example.demo.parking.dto.GGD.ParkingInfoDTOGGDR;
+import com.example.demo.parking.dto.GGD.ParkingRealtimeWrapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.CrossOrigin;

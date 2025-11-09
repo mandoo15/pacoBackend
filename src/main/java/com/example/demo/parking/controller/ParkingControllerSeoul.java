@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.parking.controller;
 
 import com.example.demo.config.EnvConfig;
 import org.json.JSONArray;

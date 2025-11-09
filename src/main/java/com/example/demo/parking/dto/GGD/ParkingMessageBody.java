@@ -1,4 +1,4 @@
-package com.example.demo.dto.GGD;
+package com.example.demo.parking.dto.GGD;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;

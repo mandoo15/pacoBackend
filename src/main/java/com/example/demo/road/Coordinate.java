@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.road;
 
 public class Coordinate {
     private double lat;

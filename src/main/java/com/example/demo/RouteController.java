@@ -1,10 +1,11 @@
 package com.example.demo;
 
-import com.example.demo.dto.RouteResult;
+import com.example.demo.parking.dto.RouteResult;
+import com.example.demo.road.service.RouteService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "https://hsu-paco-fe-r0uw.onrender.com") // 필요 시 CORS 수정
+@CrossOrigin(origins = "*") // 필요 시 CORS 수정
 @RequestMapping("/route")
 public class RouteController {
 
@@ -23,7 +24,7 @@ public class RouteController {
         return routeService.calculateRoute(start, end, type);
     }
 
-    @GetMapping("/by-coord")
+    @GetMapping(value = "/by-coord", produces = "application/json")
     public RouteResult getRouteByCoordinates(
             @RequestParam String start,
             @RequestParam String end,

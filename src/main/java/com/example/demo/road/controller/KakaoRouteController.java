@@ -1,6 +1,6 @@
-package com.example.demo.controller;
+package com.example.demo.road.controller;
 
-import com.example.demo.service.KakaoRouteService;
+import com.example.demo.road.service.KakaoRouteService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

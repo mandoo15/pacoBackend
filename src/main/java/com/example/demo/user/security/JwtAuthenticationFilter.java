@@ -1,6 +1,6 @@
-package com.example.demo.security;
+package com.example.demo.user.security;
 
-import com.example.demo.util.JwtUtil;
+import com.example.demo.user.util.JwtUtil;
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

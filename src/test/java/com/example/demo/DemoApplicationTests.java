@@ -8,7 +8,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 
-import com.example.demo.security.CustomOAuth2UserService;
+import com.example.demo.user.security.CustomOAuth2UserService;
 
 @SpringBootTest(classes = DemoApplication.class)
 @AutoConfigureMockMvc

@@ -1,6 +1,6 @@
-package com.example.demo.dto;
+package com.example.demo.parking.dto;
 
-import com.example.demo.Coordinate;
+import com.example.demo.road.Coordinate;
 
 import java.util.List;
 

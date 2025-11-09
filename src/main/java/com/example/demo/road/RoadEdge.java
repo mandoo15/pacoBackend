@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.road;
 
 public class RoadEdge {
     public int distance;

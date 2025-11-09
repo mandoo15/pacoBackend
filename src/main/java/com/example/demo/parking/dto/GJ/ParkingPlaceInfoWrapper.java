@@ -1,6 +1,6 @@
-package com.example.demo.dto.GJ;
+package com.example.demo.parking.dto.GJ;
 
-import com.example.demo.dto.GGD.ParkingInfoDTOGGD;
+import com.example.demo.parking.dto.GGD.ParkingInfoDTOGGD;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.List;
