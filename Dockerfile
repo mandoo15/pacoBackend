@@ -11,7 +11,7 @@ COPY . .
 RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 
 # 2️⃣ 실행 전용 이미지
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
 
